@@ -1,0 +1,93 @@
+.navbar{
+    --nav-bg: #023E8A;
+    --nav-text: #CAF0F8;
+
+    --nav-padding: 10px 80px 10px 80px;
+}
+
+.navbar{
+    background-color: var(--nav-bg);
+    color: var(--nav-text);
+
+    padding: var(--nav-padding);
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.nav-link{
+    position: relative;
+}
+
+.nav-link::after{
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+    height: 3px;
+    width: 0px;
+    background-color: #0077B6;
+    transition: width 0.2s linear;
+}
+
+.nav-link:hover::after{
+    width: 100%;
+}
+
+.profile-picture{
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+}
+
+.profile-picture img{
+    border-radius: inherit;
+}
+
+.navoptions{
+    flex: 1;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 35px;
+}
+
+
+/* ------------------ RESPONSIVE LAYTOUT---------- */
+/* .mobile-navbar{
+    display: none;
+} */
+
+
+/* Mobile */
+@media (max-width: 700px) {
+    .mobile-navbar{
+        display: block;
+    }
+
+    .navoptions{
+        display: none;
+    }
+    
+    .navbar{
+        justify-content: space-between;
+    }
+}
+
+/* Tablet */
+@media (min-width: 700px) and (max-width: 1023px) {
+
+}
+
+/* Laptop */
+@media (min-width: 1024px) and (max-width: 1279px) {
+
+}
+
+/* Desktop */
+@media (min-width: 1280px) {
+
+}
