@@ -142,7 +142,7 @@ const Hero = () => {
             }}
             whileHover={{
               scale: 1.3,
-              rotate: 360,
+              rotate: -1,
             }}
           >
             {item.icon}

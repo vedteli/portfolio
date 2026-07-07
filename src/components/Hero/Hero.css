@@ -11,7 +11,7 @@
     gap:5rem;
 
     position:relative;
-    overflow:hidden;
+    overflow:visible;
 }
 
 /* ===========================
@@ -262,7 +262,7 @@
 
     align-items:center;
 
-    z-index:2;
+    z-index:5;
 
 }
 
@@ -290,7 +290,7 @@
 
     position:relative;
 
-    z-index:2;
+    z-index:10;
 
     width:min(100%,420px);
 
@@ -518,9 +518,42 @@
 
 }
 
-.floating-icon{
+/* .floating-icon{
 
     font-size:1.5rem;
+
+} */
+ .floating-icon{
+
+    width:55px;
+    height:55px;
+
+    display:flex;
+    align-items:center;
+    justify-content:center;
+
+    border-radius:50%;
+
+    backdrop-filter:blur(10px);
+
+    background:rgba(255,255,255,.03);
+
+    border:1px solid rgba(255,255,255,.05);
+
+}
+ .floating-icon{
+
+    opacity:.28;
+
+    filter:drop-shadow(0 0 10px rgba(255,255,255,.15));
+
+}
+
+.floating-icon:hover{
+
+    opacity:.9;
+
+    transform:scale(1.15);
 
 }
 
