@@ -1,0 +1,140 @@
+.hero {
+    width: min(1200px, 92%);
+    margin: 3rem auto;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 4rem;
+
+    color: white;
+}
+
+.hero-content {
+    flex: 1;
+    max-width: 650px;
+}
+
+.hero-greeting {
+    font-size: clamp(1.2rem, 2vw, 1.7rem);
+    margin-bottom: .75rem;
+}
+
+.hero-name {
+    font-size: clamp(3rem, 8vw, 6rem);
+    line-height: 1;
+    margin-bottom: 1rem;
+}
+
+.hero-role {
+    font-size: clamp(1.4rem, 2.5vw, 2.2rem);
+    font-weight: 600;
+    min-height: 3rem;
+    margin-bottom: 2rem;
+}
+
+.hero-description {
+    font-size: 1.05rem;
+    line-height: 1.8;
+    text-align: justify;
+    margin-bottom: 2rem;
+}
+
+.hero-socials {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.hero-socials a {
+    color: white;
+    text-decoration: none;
+    transition: .25s;
+}
+
+.hero-socials a:hover {
+    color: #38bdf8;
+}
+
+.hero-image {
+    flex: 1;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero-image img {
+    width: min(100%, 420px);
+    aspect-ratio: 4 / 5;
+    object-fit: cover;
+
+    border-radius: 24px;
+    border: 2px solid #2563eb;
+}
+
+@media (max-width: 992px) {
+
+    .hero {
+        gap: 2.5rem;
+    }
+
+    .hero-name {
+        font-size: clamp(2.8rem, 7vw, 5rem);
+    }
+
+    .hero-image img {
+        width: 340px;
+    }
+
+}
+
+@media (max-width: 768px) {
+
+    .hero {
+        flex-direction: column-reverse;
+        text-align: center;
+        gap: 2rem;
+    }
+
+    .hero-content {
+        max-width: 100%;
+    }
+
+    .hero-description {
+        text-align: center;
+    }
+
+    .hero-socials {
+        justify-content: center;
+    }
+
+    .hero-image img {
+        width: min(85vw, 320px);
+    }
+
+}
+
+@media (max-width: 480px) {
+
+    .hero {
+        margin: 2rem auto;
+    }
+
+    .hero-role {
+        min-height: 4rem;
+    }
+
+    .hero-description {
+        font-size: .95rem;
+    }
+
+    .hero-socials {
+        gap: 1rem;
+    }
+
+}

@@ -1,6 +1,7 @@
 import React from 'react'
 import './Navbar.css'
 import { MobileSheet } from './MobileSheet'
+import userProfilePlaceholder from "../../assets/user-profile-placeholder.png"
 
 import {
   Home,
@@ -11,6 +12,13 @@ import {
   Mail,
   X,
 } from "lucide-react";
+
+export const socialMediaLinks =
+  [
+    {name: "Github", url: "https://github.com/vedteli"},
+    {name: "Linkedin", url: "https://www.linkedin.com/in/vedteli"},
+    {name: "Email", url: "ssawdawkar@gmail.com"}
+  ]
 
 export const icons = {
   Home: <Home size={20} />,
@@ -53,7 +61,7 @@ const NavBar = () => {
     <div className='navbar'>
     
       <div className='profile-picture'>
-        <img src="src\assets\user-profile-placeholder.png" alt="" srcSet=""/>
+        <img src={userProfilePlaceholder} alt="" srcSet=""/>
       </div>
 
       <div className="mobile-navbar">

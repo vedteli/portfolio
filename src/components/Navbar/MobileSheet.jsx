@@ -1,19 +1,13 @@
 import "./MobileSheet.css";
 import { navoptions, icons } from "./Navbar.jsx";
 import userProfilePlaceholder from "../../assets/user-profile-placeholder.png"
+import { socialMediaLinks } from "./Navbar.jsx";
 
 import {
   Sheet,
   SheetTrigger,
   SheetContent,
 } from "@/components/ui/sheet";
-
-const socialMediaLinks =
-  [
-    {name: "Github", url: "https://github.com/vedteli"},
-    {name: "Linkedin", url: "www.linkedin.com/in/vedteli"},
-    {name: "Email", url: "ssawdawkar@gmail.com"}
-  ]
 
 
 export function MobileSheet() {
@@ -83,7 +77,7 @@ export function MobileSheet() {
 
           {
             socialMediaLinks.map((obj) =>
-              <a href={obj.url}>{obj.name}</a>
+              <a href={obj.url} target="_blank">{obj.name}</a>
             )
           }
         </div>
