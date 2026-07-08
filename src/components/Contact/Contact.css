@@ -1,0 +1,599 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Sora:wght@600;700;800&display=swap");
+
+/* ===========================
+            PAGE
+=========================== */
+
+.contact-page{
+
+    width:min(1200px,92%);
+    margin:1px auto;
+
+    position:relative;
+
+}
+
+/* ===========================
+        BACKGROUND GLOW
+=========================== */
+
+.contact-page::before{
+
+    content:"";
+
+    position:absolute;
+
+    width:420px;
+    height:420px;
+
+    top:-120px;
+    left:-180px;
+
+    border-radius:50%;
+
+    background:#0077B6;
+
+    filter:blur(170px);
+
+    opacity:.14;
+
+    z-index:-1;
+
+}
+
+.contact-page::after{
+
+    content:"";
+
+    position:absolute;
+
+    width:360px;
+    height:360px;
+
+    right:-150px;
+    bottom:-120px;
+
+    border-radius:50%;
+
+    background:#00B4D8;
+
+    filter:blur(170px);
+
+    opacity:.10;
+
+    z-index:-1;
+
+}
+
+/* ===========================
+            HEADER
+=========================== */
+
+.contact-header{
+
+    text-align:center;
+
+    margin-bottom:70px;
+
+}
+
+.contact-badge{
+
+    display:inline-block;
+
+    padding:8px 18px;
+
+    border-radius:999px;
+
+    border:1px solid rgba(72,202,228,.18);
+
+    background:rgba(0,180,216,.08);
+
+    color:#90E0EF;
+
+    font-family:"Inter",sans-serif;
+
+    font-size:.85rem;
+
+    font-weight:600;
+
+    letter-spacing:1px;
+
+    margin-bottom:20px;
+
+}
+
+.contact-title{
+
+    font-family:"Sora",sans-serif;
+
+    font-size:clamp(3rem,7vw,4.6rem);
+
+    font-weight:800;
+
+    color:#CAF0F8;
+
+    margin-bottom:20px;
+
+}
+
+.contact-subtitle{
+
+    width:min(720px,95%);
+
+    margin:auto;
+
+    color:#ADE8F4;
+
+    font-family:"Inter",sans-serif;
+
+    font-size:1.05rem;
+
+    line-height:1.9;
+
+}
+
+/* ===========================
+            GRID
+=========================== */
+
+.contact-container{
+
+    display:grid;
+
+    grid-template-columns:380px 1fr;
+
+    gap:40px;
+
+    align-items:start;
+
+}
+
+/* ===========================
+            CARDS
+=========================== */
+
+.contact-info,
+.contact-form{
+
+    background:rgba(2,62,138,.70);
+
+    backdrop-filter:blur(20px);
+
+    -webkit-backdrop-filter:blur(20px);
+
+    border:1px solid rgba(72,202,228,.15);
+
+    border-radius:24px;
+
+    padding:35px;
+
+    transition:.35s ease;
+
+}
+
+.contact-info:hover,
+.contact-form:hover{
+
+    border-color:#48CAE4;
+
+    box-shadow:
+        0 20px 45px rgba(0,180,216,.12);
+
+}
+
+/* ===========================
+        LEFT CARD
+=========================== */
+
+.contact-info h2{
+
+    font-family:"Sora",sans-serif;
+
+    color:#CAF0F8;
+
+    font-size:2rem;
+
+    margin-bottom:12px;
+
+}
+
+.contact-info>p{
+
+    color:#ADE8F4;
+
+    font-family:"Inter",sans-serif;
+
+    line-height:1.8;
+
+    margin-bottom:35px;
+
+}
+
+/* ===========================
+        INFO ITEMS
+=========================== */
+
+.info-item{
+
+    display:flex;
+
+    align-items:flex-start;
+
+    gap:18px;
+
+    margin-bottom:28px;
+
+}
+
+.icon-box{
+
+    width:56px;
+    height:56px;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    flex-shrink:0;
+
+    border-radius:18px;
+
+    background:rgba(0,180,216,.10);
+
+    border:1px solid rgba(72,202,228,.18);
+
+    color:#48CAE4;
+
+    transition:.3s ease;
+
+}
+
+.info-item:hover .icon-box{
+
+    background:#0096C7;
+
+    color:#CAF0F8;
+
+    transform:translateY(-3px);
+
+}
+
+.info-item div{
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:6px;
+
+}
+
+.info-item span{
+
+    color:#90E0EF;
+
+    font-family:"Inter",sans-serif;
+
+    font-size:.9rem;
+
+    font-weight:600;
+
+}
+
+.info-item a,
+.info-item p{
+
+    color:#CAF0F8;
+
+    text-decoration:none;
+
+    font-family:"Inter",sans-serif;
+
+    font-size:1rem;
+
+    transition:.25s;
+
+}
+
+.info-item a:hover{
+
+    color:#48CAE4;
+
+}
+
+/* ===========================
+        SOCIAL ICONS
+=========================== */
+
+.social-icons{
+
+    display:flex;
+
+    gap:18px;
+
+    margin-top:40px;
+
+}
+
+.social-icons a{
+
+    width:52px;
+    height:52px;
+
+    display:flex;
+
+    justify-content:center;
+    align-items:center;
+
+    border-radius:50%;
+
+    background:rgba(0,180,216,.10);
+
+    border:1px solid rgba(72,202,228,.18);
+
+    color:#CAF0F8;
+
+    transition:.3s ease;
+
+}
+
+.social-icons a:hover{
+
+    background:#00B4D8;
+
+    color:#03045E;
+
+    transform:translateY(-6px) rotate(10deg);
+
+    box-shadow:
+        0 12px 25px rgba(0,180,216,.25);
+
+}
+
+/* ===========================
+        FORM
+=========================== */
+
+.contact-form{
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:24px;
+
+}
+
+.input-group{
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:10px;
+
+}
+
+.input-group label{
+
+    font-family:"Inter",sans-serif;
+
+    color:#90E0EF;
+
+    font-size:.95rem;
+
+    font-weight:600;
+
+}
+
+.input-group input,
+.input-group textarea{
+
+    width:100%;
+
+    padding:16px 18px;
+
+    background:rgba(3,4,94,.45);
+
+    border:1px solid rgba(72,202,228,.15);
+
+    border-radius:14px;
+
+    outline:none;
+
+    color:#CAF0F8;
+
+    font-family:"Inter",sans-serif;
+
+    font-size:1rem;
+
+    transition:.3s ease;
+
+}
+
+.input-group input::placeholder,
+.input-group textarea::placeholder{
+
+    color:#90E0EF;
+
+    opacity:.6;
+
+}
+
+.input-group input:focus,
+.input-group textarea:focus{
+
+    border-color:#48CAE4;
+
+    box-shadow:
+        0 0 0 4px rgba(72,202,228,.12);
+
+}
+
+.input-group textarea{
+
+    resize:vertical;
+
+    min-height:180px;
+
+}
+
+/* ===========================
+        SEND BUTTON
+=========================== */
+
+.send-btn{
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    gap:10px;
+
+    padding:16px;
+
+    margin-top:10px;
+
+    border:none;
+
+    border-radius:14px;
+
+    background:#00B4D8;
+
+    color:#03045E;
+
+    font-family:"Inter",sans-serif;
+
+    font-size:1rem;
+
+    font-weight:700;
+
+    cursor:pointer;
+
+    transition:.35s ease;
+
+}
+
+.send-btn:hover{
+
+    background:#48CAE4;
+
+    transform:translateY(-4px);
+
+    box-shadow:
+        0 15px 35px rgba(0,180,216,.35);
+
+}
+
+.send-btn svg{
+
+    transition:.3s;
+
+}
+
+.send-btn:hover svg{
+
+    transform:translateX(6px);
+
+}
+
+/* ===========================
+        RESPONSIVE
+=========================== */
+
+@media(max-width:992px){
+
+.contact-container{
+
+    grid-template-columns:1fr;
+
+}
+
+}
+
+@media(max-width:768px){
+
+.contact-page{
+
+    margin:90px auto;
+
+}
+
+.contact-title{
+
+    font-size:2.8rem;
+
+}
+
+.contact-subtitle{
+
+    font-size:1rem;
+
+}
+
+.contact-info,
+.contact-form{
+
+    padding:28px;
+
+}
+
+.social-icons{
+
+    justify-content:center;
+
+}
+
+}
+
+@media(max-width:480px){
+
+.contact-title{
+
+    font-size:2.2rem;
+
+}
+
+.contact-info h2{
+
+    font-size:1.6rem;
+
+}
+
+.contact-info,
+.contact-form{
+
+    padding:22px;
+
+}
+
+.icon-box{
+
+    width:48px;
+    height:48px;
+
+}
+
+.info-item{
+
+    gap:14px;
+
+}
+
+.send-btn{
+
+    padding:14px;
+
+}
+
+.input-group input,
+.input-group textarea{
+
+    padding:14px;
+
+}
+
+}

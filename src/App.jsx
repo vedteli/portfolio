@@ -5,7 +5,7 @@ import { Routes, Route } from "react-router-dom";
 import Home from "./components/Home/Home";
 import Resume from "./components/Resume/Resume";
 // import Blogs from "./pages/Blogs/Blogs";
-// import Contact from "./pages/Contact/Contact";
+import Contact from "./components/Contact/Contact";
 // import ProjectsPage from "./pages/Projects/ProjectsPage";
 // import About from "./pages/About/About";
 
@@ -17,6 +17,11 @@ const App = () => {
          <Route
           path="/"
           element={<Home />}
+        />
+
+        <Route
+          path="/contact"
+          element={<Contact />}
         />
 
         <Route
