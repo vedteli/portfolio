@@ -1,7 +1,7 @@
 import "./Navbar.css";
 import { motion } from "motion/react";
 import { MobileSheet } from "./MobileSheet";
-import userProfilePlaceholder from "../../assets/user-profile-placeholder.png";
+import userProfilePlaceholder from "../../assets/userProfileImage.png";
 
 import { NavLink } from "react-router-dom";
 
@@ -43,14 +43,14 @@ export const navoptions = [
     name: "Home",
     Url: "/",
   },
-  {
-    name: "Projects",
-    Url: "/projects",
-  },
-  {
-    name: "Blogs",
-    Url: "/blogs",
-  },
+  // {
+  //   name: "Projects",
+  //   Url: "/projects",
+  // },
+  // {
+  //   name: "Blogs",
+  //   Url: "/blogs",
+  // },
   {
     name: "Resume",
     Url: "/resume",

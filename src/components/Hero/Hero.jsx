@@ -21,7 +21,7 @@ import {
 } from "react-icons/si";
 
 import "./Hero.css";
-import userProfilePicture from "../../assets/userProfilePicture.png";
+import userHeroImage from "../../assets/userHeroImage.png";
 import { socialMediaLinks } from "../Navbar/Navbar";
 
 const floatingIcons = [
@@ -205,7 +205,7 @@ const Hero = () => {
         <div className="hero-image-bg"></div>
 
         <motion.img
-          src={userProfilePicture}
+          src={userHeroImage}
           alt="Ved Teli"
           whileHover={{
             y: -10,

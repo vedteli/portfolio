@@ -6,6 +6,10 @@ import Home from "./components/Home/Home";
 import Resume from "./components/Resume/Resume";
 // import Blogs from "./pages/Blogs/Blogs";
 import Contact from "./components/Contact/Contact";
+import Projects from "./components/Projects/Projects";
+import ProjectDetails from "./components/ProjectDetails/ProjectDetails";
+
+// import ProjectDetails from "./components/ProjectDetails/ProjectDetails";
 // import ProjectsPage from "./pages/Projects/ProjectsPage";
 // import About from "./pages/About/About";
 
@@ -18,6 +22,10 @@ const App = () => {
           path="/"
           element={<Home />}
         />
+         {/* <Route
+          path="/projects"
+          element={<ProjectDetails />}
+        /> */}
 
         <Route
           path="/contact"

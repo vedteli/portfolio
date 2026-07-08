@@ -1,6 +1,6 @@
 import "./MobileSheet.css";
 import { navoptions, icons } from "./Navbar.jsx";
-import userProfilePlaceholder from "../../assets/user-profile-placeholder.png"
+import userProfilePlaceholder from "../../assets/userProfileImage.png"
 import { socialMediaLinks } from "./Navbar.jsx";
 
 import {
