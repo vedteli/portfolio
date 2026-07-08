@@ -1,0 +1,499 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Sora:wght@600;700;800&display=swap");
+
+/* ===========================
+        SECTION
+=========================== */
+
+.projects-section{
+
+    width:min(1250px,92%);
+    margin:120px auto;
+
+}
+
+.projects-badge{
+
+    display:block;
+
+    width:fit-content;
+
+    margin:auto;
+
+    padding:8px 18px;
+
+    border-radius:999px;
+
+    border:1px solid rgba(72,202,228,.2);
+
+    background:rgba(0,180,216,.08);
+
+    color:#90E0EF;
+
+    font-family:"Inter",sans-serif;
+
+    font-size:.85rem;
+
+    font-weight:600;
+
+    letter-spacing:1px;
+
+    margin-bottom:20px;
+
+}
+
+.projects-heading{
+
+    text-align:center;
+
+    font-family:"Sora",sans-serif;
+
+    font-size:clamp(3rem,6vw,4.5rem);
+
+    color:#CAF0F8;
+
+    margin-bottom:18px;
+
+}
+
+.projects-subheading{
+
+    width:min(700px,95%);
+
+    margin:auto;
+
+    text-align:center;
+
+    color:#ADE8F4;
+
+    font-family:"Inter",sans-serif;
+
+    font-size:1.05rem;
+
+    line-height:1.8;
+
+    margin-bottom:70px;
+
+}
+
+/* ===========================
+        GRID
+=========================== */
+
+.projects{
+
+    display:grid;
+
+    grid-template-columns:
+    repeat(auto-fit,minmax(350px,1fr));
+
+    gap:45px;
+
+}
+
+/* ===========================
+        PROJECT CARD
+=========================== */
+
+.project-card{
+
+    background:#023E8A;
+
+    border:1px solid rgba(72,202,228,.18);
+
+    border-radius:24px;
+
+    overflow:hidden;
+
+    transition:.35s ease;
+
+    box-shadow:
+        0 15px 35px rgba(0,0,0,.25);
+
+}
+
+.project-card:hover{
+
+    transform:translateY(-10px);
+
+    border-color:#48CAE4;
+
+    box-shadow:
+        0 25px 60px rgba(0,180,216,.18);
+
+}
+
+/* ===========================
+        IMAGE
+=========================== */
+
+.project-image-container{
+
+    position:relative;
+
+    overflow:hidden;
+
+}
+
+.project-image{
+
+    width:100%;
+
+    height:240px;
+
+    object-fit:cover;
+
+    transition:.5s ease;
+
+}
+
+.project-card:hover .project-image{
+
+    transform:scale(1.08);
+
+}
+
+.project-image-overlay{
+
+    position:absolute;
+
+    inset:0;
+
+    background:
+        linear-gradient(
+            to top,
+            rgba(3,4,94,.75),
+            rgba(3,4,94,.15),
+            transparent
+        );
+
+}
+
+/* ===========================
+        BODY
+=========================== */
+
+.project-body{
+
+    padding:28px;
+
+}
+
+/* ===========================
+        TAGS
+=========================== */
+
+.project-tags{
+
+    display:flex;
+
+    flex-wrap:wrap;
+
+    gap:10px;
+
+    margin-bottom:20px;
+
+}
+
+.project-tag{
+
+    background:rgba(0,180,216,.15);
+
+    border:1px solid rgba(72,202,228,.18);
+
+    color:#90E0EF;
+
+    padding:7px 14px;
+
+    border-radius:999px;
+
+    font-family:"Inter",sans-serif;
+
+    font-size:.8rem;
+
+    font-weight:600;
+
+    transition:.25s;
+
+}
+
+.project-tag:hover{
+
+    background:#0096C7;
+
+    color:#CAF0F8;
+
+}
+
+/* ===========================
+        TITLE
+=========================== */
+
+.project-title{
+
+    font-family:"Sora",sans-serif;
+
+    color:#CAF0F8;
+
+    font-size:1.8rem;
+
+    font-weight:700;
+
+    margin-bottom:16px;
+
+    transition:.3s;
+
+}
+
+.project-card:hover .project-title{
+
+    color:#48CAE4;
+
+}
+
+/* ===========================
+        DESCRIPTION
+=========================== */
+
+.project-description{
+
+    font-family:"Inter",sans-serif;
+
+    color:#ADE8F4;
+
+    line-height:1.8;
+
+    font-size:1rem;
+
+    margin-bottom:30px;
+
+}
+
+/* ===========================
+        BUTTONS
+=========================== */
+
+.project-buttons{
+
+    display:flex;
+
+    gap:16px;
+
+}
+
+.project-buttons a{
+
+    flex:1;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    gap:10px;
+
+    padding:14px;
+
+    border-radius:14px;
+
+    text-decoration:none;
+
+    font-family:"Inter",sans-serif;
+
+    font-weight:600;
+
+    transition:.3s ease;
+
+}
+
+.primary-btn{
+
+    background:#00B4D8;
+
+    color:#03045E;
+
+}
+
+.primary-btn:hover{
+
+    background:#48CAE4;
+
+    transform:translateY(-3px);
+
+    box-shadow:
+    0 10px 25px rgba(0,180,216,.35);
+
+}
+
+.secondary-btn{
+
+    border:1px solid rgba(72,202,228,.3);
+
+    background:transparent;
+
+    color:#CAF0F8;
+
+}
+
+.secondary-btn:hover{
+
+    background:#0077B6;
+
+    border-color:#48CAE4;
+
+    transform:translateY(-3px);
+
+}
+
+/* ===========================
+        GLOW EFFECT
+=========================== */
+
+.project-card{
+
+    position:relative;
+
+}
+
+.project-card::before{
+
+    content:"";
+
+    position:absolute;
+
+    inset:-2px;
+
+    border-radius:26px;
+
+    background:
+
+    linear-gradient(
+        135deg,
+        rgba(72,202,228,.25),
+        transparent,
+        rgba(0,180,216,.2)
+    );
+
+    opacity:0;
+
+    transition:.4s;
+
+    z-index:-1;
+
+}
+
+.project-card:hover::before{
+
+    opacity:1;
+
+}
+
+/* ===========================
+        IMAGE SHINE
+=========================== */
+
+.project-image-container::before{
+
+    content:"";
+
+    position:absolute;
+
+    top:0;
+
+    left:-120%;
+
+    width:60%;
+
+    height:100%;
+
+    z-index:2;
+
+    background:
+
+    linear-gradient(
+        120deg,
+        transparent,
+        rgba(255,255,255,.25),
+        transparent
+    );
+
+    transition:.8s;
+
+}
+
+.project-card:hover .project-image-container::before{
+
+    left:150%;
+
+}
+
+/* ===========================
+        RESPONSIVE
+=========================== */
+
+@media(max-width:992px){
+
+.projects{
+
+    grid-template-columns:
+    repeat(auto-fit,minmax(320px,1fr));
+
+}
+
+}
+
+@media(max-width:768px){
+
+.projects{
+
+    grid-template-columns:1fr;
+
+}
+
+.project-buttons{
+
+    flex-direction:column;
+
+}
+
+}
+
+@media(max-width:480px){
+
+.projects-section{
+
+    margin:80px auto;
+
+}
+
+.projects-heading{
+
+    font-size:2.5rem;
+
+}
+
+.project-image{
+
+    height:200px;
+
+}
+
+.project-body{
+
+    padding:22px;
+
+}
+
+.project-title{
+
+    font-size:1.5rem;
+
+}
+
+.project-description{
+
+    font-size:.95rem;
+
+}
+
+}
