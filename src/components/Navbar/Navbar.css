@@ -41,7 +41,7 @@
     box-shadow:
         0 18px 40px rgba(0,0,0,.28);
 
-    z-index:999;
+    z-index:10;
 
     transition:
         background .3s,

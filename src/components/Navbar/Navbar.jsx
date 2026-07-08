@@ -31,7 +31,7 @@ export const socialMediaLinks = [
 
 export const icons = {
   Home: <Home size={20} />,
-  About: <User size={20} />,
+  // About: <User size={20} />,
   Projects: <FolderGit2 size={20} />,
   Blogs: <NotebookPen size={20} />,
   Resume: <FileText size={20} />,
@@ -42,10 +42,6 @@ export const navoptions = [
   {
     name: "Home",
     Url: "/",
-  },
-  {
-    name: "About",
-    Url: "/about",
   },
   {
     name: "Projects",
