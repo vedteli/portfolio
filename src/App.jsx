@@ -1,49 +1,29 @@
 import "./App.css";
 
-import NavBar from "./components/Navbar/Navbar";
-import Hero from "./components/Hero/Hero";
-import Projects from "./components/Projects/Projects.jsx";
+import { Routes, Route } from "react-router-dom";
 
-import projectsdata from "./components/Projects/projectsData.js";
+import Home from "./components/Home/Home";
+import Resume from "./components/Resume/Resume";
+// import Blogs from "./pages/Blogs/Blogs";
+// import Contact from "./pages/Contact/Contact";
+// import ProjectsPage from "./pages/Projects/ProjectsPage";
+// import About from "./pages/About/About";
 
 const App = () => {
   return (
     <>
-      <NavBar />
+       <Routes>
 
-      <Hero />
+         <Route
+          path="/"
+          element={<Home />}
+        />
 
-      <section className="projects-section" id="projects">
-
-        <span className="projects-badge">
-          MY WORK
-        </span>
-
-        <h2 className="projects-heading">
-          Featured Projects
-        </h2>
-
-        <p className="projects-subheading">
-          A collection of projects that showcase my passion for
-          building responsive, scalable and user-friendly web
-          applications using modern technologies.
-        </p>
-
-        <div className="projects">
-
-          {projectsdata.map((project) => (
-
-            <Projects
-              key={project.id}
-              project={project}
-            />
-
-          ))}
-
-        </div>
-
-      </section>
-
+        <Route
+          path="/resume"
+          element={<Resume />}
+        />
+    </Routes>
     </>
   );
 };

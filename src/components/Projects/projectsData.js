@@ -59,70 +59,7 @@ const projectsdata = [
     github: "https://github.com/vedteli",
 
     live: "#",
-  },
-
-  {
-    id: 4,
-    title: "Code Share",
-
-    description:
-      "Upload and share programming projects with syntax highlighting and folder support.",
-
-    image:
-      "https://images.unsplash.com/photo-1515879218367-8466d910aaa4?w=1200",
-
-    technologies: [
-      "Node.js",
-      "Express",
-      "MongoDB",
-    ],
-
-    github: "https://github.com/vedteli",
-
-    live: "#",
-  },
-
-  {
-    id: 5,
-    title: "Expense Tracker",
-
-    description:
-      "Track daily expenses with beautiful charts, authentication and analytics dashboard.",
-
-    image:
-      "https://images.unsplash.com/photo-1554224155-6726b3ff858f?w=1200",
-
-    technologies: [
-      "React",
-      "ChartJS",
-      "Firebase",
-    ],
-
-    github: "https://github.com/vedteli",
-
-    live: "#",
-  },
-
-  {
-    id: 6,
-    title: "Chat Application",
-
-    description:
-      "Realtime messaging application built using Socket.io with modern responsive interface.",
-
-    image:
-      "https://images.unsplash.com/photo-1521791136064-7986c2920216?w=1200",
-
-    technologies: [
-      "React",
-      "Socket.io",
-      "Node.js",
-    ],
-
-    github: "https://github.com/vedteli",
-
-    live: "#",
-  },
+  }
 ];
 
 export default projectsdata;

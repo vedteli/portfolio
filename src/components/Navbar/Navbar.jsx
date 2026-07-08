@@ -1,9 +1,9 @@
-import { useState } from "react";
-import { motion } from "motion/react";
 import "./Navbar.css";
-
+import { motion } from "motion/react";
 import { MobileSheet } from "./MobileSheet";
 import userProfilePlaceholder from "../../assets/user-profile-placeholder.png";
+
+import { NavLink } from "react-router-dom";
 
 import {
   Home,
@@ -41,36 +41,32 @@ export const icons = {
 export const navoptions = [
   {
     name: "Home",
-    Url: "#home",
+    Url: "/",
   },
   {
     name: "About",
-    Url: "#about",
+    Url: "/about",
   },
   {
     name: "Projects",
-    Url: "#projects",
+    Url: "/projects",
   },
   {
     name: "Blogs",
-    Url: "#blogs",
+    Url: "/blogs",
   },
   {
     name: "Resume",
-    Url: "#resume",
+    Url: "/resume",
   },
   {
     name: "Contact",
-    Url: "#contact",
+    Url: "/contact",
   },
 ];
 
 const NavBar = () => {
-
-  const [activeLink, setActiveLink] = useState("Home");
-
   return (
-
     <nav className="navbar">
 
       <motion.div
@@ -83,10 +79,12 @@ const NavBar = () => {
           scale: 0.95,
         }}
       >
-        <img
-          src={userProfilePlaceholder}
-          alt="Ved Teli"
-        />
+        <NavLink to="/">
+          <img
+            src={userProfilePlaceholder}
+            alt="Ved Teli"
+          />
+        </NavLink>
       </motion.div>
 
       <ul className="navoptions">
@@ -95,15 +93,16 @@ const NavBar = () => {
 
           <li key={option.name}>
 
-            <a
-              href={option.Url}
-              onClick={() => setActiveLink(option.name)}
-              className={`nav-link ${
-                activeLink === option.name ? "active-link" : ""
-              }`}
+            <NavLink
+              to={option.Url}
+              className={({ isActive }) =>
+                isActive
+                  ? "nav-link active-link"
+                  : "nav-link"
+              }
             >
               {option.name}
-            </a>
+            </NavLink>
 
           </li>
 
@@ -116,9 +115,7 @@ const NavBar = () => {
       </div>
 
     </nav>
-
   );
-
 };
 
 export default NavBar;
